@@ -62,11 +62,11 @@
         </details>
         </section>
         <section class="content">
-          <h2>Estruturas Condicionais</h2>
+          <h2>Estruturas Condicionias</h2>
           <h1>
-            Titulo da Atividade
+            Par ou Ímpar?
           </h1>
-          <p>Um pequeno lide, um texto explicativo sobre a atividade ou algum comentário.</p>
+          <p>Após digitar um número o JavaScript deverá nos dizer se ele é par ou ímpar.</p>
 
           <!--
 
@@ -91,8 +91,18 @@
 
           -->
           
-          <!-- Aqui vai o formulário da atividade, não esquecer de colocar tudo dentro da tag <form>...</form> -->
-        </section>
+            <div class="linha">
+                <div class="division-1">
+                    <label for="txtNumero" class="label-form">Digite um número:</label>
+                    <input type="number" class="form-input" id="txtNumero">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" class="form-button button-primary" onclick="parOuImpar()">Par ou ímpar?</button>
+                <button type="reset" class="form-button button-secondary">Limpar</button>
+            </div>
+            <div class="output output-primary" id="resultado"></div>
+            </section>
       </div>
     </main>
     <footer class="footer">
@@ -118,5 +128,6 @@
     </footer>
     <!-- Aqui vai o JavaScript da página -->
     <script type="text/javascript" src="../assets/scripts/main.js"></script>
+    <script type="text/javascript" src="../assets/scripts/condicionais.js"></script>
   </body>
 </html>

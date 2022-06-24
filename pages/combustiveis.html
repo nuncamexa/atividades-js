@@ -64,9 +64,9 @@
         <section class="content">
           <h2>Estruturas Condicionais</h2>
           <h1>
-            Titulo da Atividade
+            Qual combustível abastecer?
           </h1>
-          <p>Um pequeno lide, um texto explicativo sobre a atividade ou algum comentário.</p>
+          <p>Em veículos bicombustíveis uma conta que se costuma fazer para saber com qual combustível abastecer é: se o preço do etanol for até 70% do valor da gasolina, se abastece com etanol, se for maior que 70%, se abastece com gasolina.</p>
 
           <!--
 
@@ -91,7 +91,21 @@
 
           -->
           
-          <!-- Aqui vai o formulário da atividade, não esquecer de colocar tudo dentro da tag <form>...</form> -->
+          <form>
+              <div class="linha">
+                  <div class="division-2">
+                    <label for="txtEtanol" class="form-label">Digite o preço do Etanol</label>
+                    <input type="text" class="form-input" id="txtEtanol">
+                  </div>
+                  <div class="division-2">
+                    <label for="txtGasolina" class="form-label">Digite o preço do Gasolina</label>
+                    <input type="text" class="form-input" id="txtGasolina" autofocus>
+                  </div>
+                  <button type="button" class="form-button button-primary" onclick="calcularCombustiveis()">Calcular</button>
+                  <button type="reset" class="form-button button-secondary">Limpar</button>
+              </div>
+          </form>
+          <div class="output output-primary" id="resultado"></div>
         </section>
       </div>
     </main>
@@ -118,5 +132,6 @@
     </footer>
     <!-- Aqui vai o JavaScript da página -->
     <script type="text/javascript" src="../assets/scripts/main.js"></script>
+    <script type="text/javascript" src="../assets/scripts/condicionais.js"></script>
   </body>
 </html>
